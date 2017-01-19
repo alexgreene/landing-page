@@ -1,217 +1,141 @@
-/*@font-face {
-    font-family: Montserrat;
-    src: url('Montserrat-Regular.ttf');
-}*/
-
-@import url(http://fonts.googleapis.com/css?family=Raleway:800);
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic);
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400, 400i');
 
 body { 
-	font-family: 'Raleway', sans-serif;
-	font-weight: 800;
-	margin: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #d8fcef;
+    font-family: 'Merriweather', serif;
+	margin: 0;	
+    width: 100%;
+    color: #393D3F;
+    font-size: 150%;
 }
 
-#main {
-	position: absolute;
-	padding-bottom: 4%;
+#container {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 60%;
+    margin-left: 150px;
+    /*margin:auto;*/
+    margin-top:50px;
+    min-width: 430px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 568px) {
+    body {
+        font-size: 90%;
+    }
+    #container {
+        min-width: 0px;
+        margin: 20px;
+        width: 90%;
+    }
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 300;
+    line-height: 1.5;
 }
 
 a {
-	color: rgb(227, 46, 116);
+    text-decoration: none;
+    padding-bottom: 3px
+    color:#393D3F;
+    cursor: pointer;
 }
 
-#name {
-	font-size: 7vw;
-	color: white;
-	padding-left: 5vw;
-	padding-top: 3vw;
-	
-	-moz-animation-name: showName;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease;
-    -moz-animation-duration: 1.5s;
-
-    -webkit-animation-name: showName;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-duration: 1.5s;
-
-    animation-name: showName;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-duration: 1.5s;
+a:hover {
+    text-decoration: none;
 }
 
-#name_highlight {
-		background-color: transparent;
+a:link {
+    color:#393D3F;
+    text-decoration: none;
 }
 
-#name::selection {
-  background: #dbfa3e;
-  color: white;
-}
-#name::-moz-selection {
-  background: #dbfa3e; 
-  color: white;
+a:visited {
+    color:#393D3F;
+    text-decoration: none;
 }
 
-#word {
-	-webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    
-	font-size: 5vw;
-	color: gray;
-	padding-left: 5vw;
-	
-	-moz-animation-name: showWord;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: ease;
-    -moz-animation-duration: 1.5s;
-
-    -webkit-animation-name: showWord;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-duration: 1.5s;
-
-    animation-name: showWord;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-duration: 1.5s;
-    
-    -webkit-transition-duration: 1s;
-	-moz-transition-duration: 1s;
-	-o-transition-duration: 1s;
-	transition-duration: 1s;
-	-webkit-transition-property: -webkit-transform;
-	-moz-transition-property: -moz-transform;
-	-o-transition-property: -o-transform;
-	transition-property: transform;
+a:active {
+    color:#393D3F;
+    text-decoration: none;
 }
 
-#word:hover {
-	color: rgb(227, 46, 116) !important;
+.hili {
+    padding-left: 3px;
+    padding-right: 3px;
+    padding: 2px;
+    border-radius:3px;
+    box-sizing: content-box;
 }
 
-#word::selection {
-  background: #dbfa3e;
-  color: white;
-}
-#word::-moz-selection {
-  background: #dbfa3e; 
-  color: white;
+.hili-yellow {
+    background-color: #FFED65;
 }
 
-#word.selected {
-  -webkit-transform: translateX(15px);
-  -moz-transform: translateX(15px);
-  -ms-transform: translateX(15px);
-  -o-transform: translateX(15px);
-  transform: translateX(15px);
+.hili-green {
+    background-color: #BCE784;
 }
 
-#word a {
-        color: gray;
-        text-decoration: none;
+.under-purple {
+    font-style: italic;
+    border-bottom: 3px solid #B4ADEA;
 }
 
-#word a:hover {
-        color: rgb(227, 46, 116);
+.under-blue {
+    font-style: italic;
+    border-bottom: 3px solid #CAE9FF;
 }
 
-#secret {
-	position: fixed;
-	background-color: rgba(255, 255, 255, 0.95);
-	width: 30vw;
-	margin-left: 61vw;
-	padding-left: 5vw;
-	padding-right: 5vw;
-	padding-top: 5vw;
-	float: right;
-        height: 100%;
-	bottom: 0;
-	font-size: 1.75vw;
-	visibility: hidden;
-	opacity: 0;
-        overflow: scroll;
-	
-	font-family: 'Merriweather', serif;
-	font-weight: 400;
-	font-size: 1.3vw;
-	
-	-webkit-transition-duration: .75s;
-	-moz-transition-duration: .75s;
-	-o-transition-duration: .75s;
-	transition-duration: .75s;
+.extra {
+    font-style: italic;
 }
 
-#secret.selected {
-	opacity: 1;
-   -webkit-transform: translateX(-15px);
-   -moz-transform: translateX(-15px);
-   -ms-transform: translateX(-15px);
-   -o-transform: translateX(-15px);
-   transform: translateX(-15px);
+.boom {
+    margin-bottom: 55px;
 }
 
-#twitter, #quora, #github, #contact, #teamwork, #yankees, #projects, #tools {
-        padding-top: 5vh;
-	display: none;
+#postal {
+    display: none;
 }
 
-@-moz-keyframes showWord {
-    0% {
-        -moz-transform: translateX(-15px);
-    }
-    100% {
-        -moz-transform: translateX(0);
-    }
-}
-@-webkit-keyframes showWord {
-    0% {
-        -webkit-transform: translateX(-15px);
-    }
-    100% {
-        -webkit-transform: translateX(0);
-    }
-}
-@keyframes showWord {
-    0% {
-        transform: translateX(-15px);
-    }
-    100% {
-        transform: translateX(0);
-    }
+input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-@-moz-keyframes showName {
-    0% {
-        -moz-transform: translateY(-15px);
-    }
-    100% {
-        -moz-transform: translateY(0);
-    }
+input[type=submit] {
+    width: 100%;
+    background-color: #BCE784;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
-@-webkit-keyframes showName {
-    0% {
-        -webkit-transform: translateY(-15px);
-    }
-    100% {
-        -webkit-transform: translateY(0);
-    }
+
+input[type=submit]:hover {
+    background-color: rgb(148, 182, 104);
 }
-@keyframes showName {
-    0% {
-        transform: translateY(-15px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+
+.large-header {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
 }
