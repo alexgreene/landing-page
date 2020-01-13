@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400, 400i');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700&display=swap');
 
 body { 
     font-family: 'Merriweather', serif;
 	margin: 0;	
     width: 100%;
     color: #393D3F;
-    font-size: 150%;
+    font-size: 14px;
 }
 
 #container {
-    position: absolute;
-
-    top: 0;
-    left: 0;
 
     width: 60%;
     margin-left: 150px;
@@ -40,6 +37,17 @@ h2 {
 h3 {
     font-weight: 300;
     line-height: 1.5;
+}
+.sub-header {
+    
+}
+.section-header {
+    font-family: 'Lora', serif;
+
+}
+
+p {
+    font-size: 14px;
 }
 
 a {
@@ -74,6 +82,8 @@ a:active {
     padding: 2px;
     border-radius:3px;
     box-sizing: content-box;
+    line-height: 1.75;
+    word-wrap: break-word;
 }
 
 .hili-yellow {
@@ -82,6 +92,38 @@ a:active {
 
 .hili-green {
     background-color: #BCE784;
+}
+
+.hili-green2 {
+    background-color: #7dce82;
+}
+
+.hili-flame {
+    background-color: #ec4e20;
+}
+
+.hili-coral {
+    background-color: #ff8360;
+}
+
+.hili-bubble-gum {
+    background-color: #f8c7cc;
+}
+
+.hili-lavender-gray {
+    background-color: #b8b8d1;
+}
+
+.hili-platinum {
+    background-color: #e9e7e3;
+}
+
+.hili-light {
+    background-color: #fdfcfc;
+}
+
+.hili-purple {
+    background-color: #B4ADEA
 }
 
 .under-purple {
@@ -138,4 +180,44 @@ input[type=submit]:hover {
     background-size: cover;
     background-position: center center;
     z-index: 1;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
