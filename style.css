@@ -1,4 +1,5 @@
- @import url('https://fonts.googleapis.com/css?family=Gotu|Open+Sans:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gotu|Open+Sans:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:700|Goudy+Bookletter+1911&display=swap');
 
 body { 
     font-family: 'Open Sans', sans-serif;
@@ -135,7 +136,7 @@ a:active {
 }
 
 p.drop-cap:first-letter {
-    font-size: 4em;
+    font-size: 2em;
     font-weight: 900;
     float: left;
     margin-top: .07em;
@@ -617,50 +618,137 @@ input[type=submit]:hover {
 
 .square-deco-container .square-deco-content {
   grid-area: inner;
-  padding: 5px 10px;
+  padding: 5px 15px;
 }
 
 .square-deco-container .square-deco-inner {
   grid-area: mid;
-  border: 1px solid plum;
+  border: 1px solid black;
 }
 
 .square-deco-container .square-deco-square-left-top {
   grid-column: outer-start / inner-start;
   grid-row: outer-start / inner-start;
-  border: 1px solid lightcoral;
+  border: 1px solid black;
 }
 
 .square-deco-container .square-deco-square-left-bottom {
   grid-column: outer-start / inner-start;
   grid-row: inner-end / outer-end;
-  border: 1px solid lightcoral;
+  border: 1px solid black;
 }
 
 .square-deco-container .square-deco-square-right-top {
   grid-column: inner-end / outer-end;
   grid-row: outer-start / inner-start;
-  border: 1px solid lightcoral;
+  border: 1px solid black;
 }
 
 .square-deco-container .square-deco-square-right-bottom {
   grid-column: inner-end / outer-end;
   grid-row: inner-end / outer-end;
-  border: 1px solid lightcoral;
+  border: 1px solid black;
 }
 
 .square-deco-container .square-deco-tall {
   grid-column: gap-start / gap-end;
   grid-row: outer-start / outer-end;
-  border-top: 1px solid aquamarine;
-  border-bottom: 1px solid aquamarine;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .square-deco-container .square-deco-wide {
   grid-column: outer-start / outer-end;
   grid-row: gap-start / gap-end;
-  border-left: 1px solid khaki;
-  border-right: 1px solid khaki;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+/********** DIAMOND ***********/
+.diamond-deco-container {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: 
+    [outer-start]  5px 
+    [mid-start]    5px
+    [inner-start]  3px
+    [gap-start]    1fr
+    [gap-end]      3px
+    [inner-end]    5px
+    [mid-end]      5px 
+    [outer-end] 
+  ;
+  grid-template-rows: 
+    [outer-start]  5px 
+    [mid-start]    5px 
+    [inner-start]  3px
+    [gap-start]    1fr
+    [gap-end]      3px
+    [inner-end]    5px
+    [mid-end]      5px 
+    [outer-end] 
+  ;
+}
+
+.diamond-deco-container .diamond-deco-content {
+  grid-area: inner;
+  padding: 5px 10px;
+}
+
+.diamond-deco-container .diamond-deco-square-left-top {
+  grid-column: outer-start / inner-start;
+  grid-row: outer-start / inner-start;
+  transform: rotate(45deg);
+  border: 1px solid black;
+}
+
+.diamond-deco-container .diamond-deco-square-left-bottom {
+  grid-column: outer-start / inner-start;
+  grid-row: inner-end / outer-end;
+  transform: rotate(45deg);
+  border: 1px solid black;
+}
+
+.diamond-deco-container .diamond-deco-square-right-top {
+  grid-column: inner-end / outer-end;
+  grid-row: outer-start / inner-start;
+  transform: rotate(45deg);
+  border: 1px solid black;
+}
+
+.diamond-deco-container .diamond-deco-square-right-bottom {
+  grid-column: inner-end / outer-end;
+  grid-row: inner-end / outer-end;
+  transform: rotate(45deg);
+  border: 1px solid black;
+}
+
+.diamond-deco-container .diamond-deco-tall-outer {
+  grid-column: gap-start / gap-end;
+  grid-row: outer-start / outer-end;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.diamond-deco-container .diamond-deco-tall-inner {
+  grid-column: gap-start / gap-end;
+  grid-row: inner-start / inner-end;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.diamond-deco-container .diamond-deco-wide-outer {
+  grid-column: outer-start / outer-end;
+  grid-row: gap-start / gap-end;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.diamond-deco-container .diamond-deco-wide-inner {
+  grid-column: inner-start / inner-end;
+  grid-row: gap-start / gap-end;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 
