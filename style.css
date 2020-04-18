@@ -67,6 +67,22 @@ body {
 }
 
 
+.proj h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.proj h1 {
+    margin-top: 0;
+    margin-bottom: 50px; 
+    font-size: 30px;
+}
+
+.proj:hover h2:after{
+    content: '..';
+}
+
+
 .toc h2 {
     margin: 0;
 }
