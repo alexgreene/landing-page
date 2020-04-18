@@ -39,7 +39,6 @@ body {
 .row-item.project {
     background-color: inherit;
     /*border: 5px ridge black;*/
-    padding: 10px;
 }
 
 .company {
@@ -617,7 +616,7 @@ input[type=submit]:hover {
 
 
 .container {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .content-default {
