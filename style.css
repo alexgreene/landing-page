@@ -1,141 +1,430 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400, 400i');
+@import url('https://fonts.googleapis.com/css?family=Gotu|Open+Sans:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911&display=swap');
 
-body { 
-    font-family: 'Merriweather', serif;
-	margin: 0;	
+
+html {
+     box-sizing: border-box;
+}
+
+body {
+    margin: auto; 
+    background-color: rgb(247, 247, 247);
+}
+
+.img-full {
     width: 100%;
-    color: #393D3F;
-    font-size: 150%;
+    margin: auto;
+}
+.img-75 {
+    width: 75%;
+    height: 75%;
+    margin: auto;
+}
+.img-50 {
+    width: 50%;
+    height: 50%;
+    margin: auto;
 }
 
-#container {
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
-    width: 60%;
-    margin-left: 150px;
-    /*margin:auto;*/
-    margin-top:50px;
-    min-width: 430px;
-    margin-bottom: 100px;
+.alexander {
+    text-align: center;
+    font-family: 'Goudy Bookletter 1911', serif;
+    margin-bottom: 50px;
+    color: rgb(0, 168, 120);
 }
 
-@media screen and (max-width: 568px) {
-    body {
-        font-size: 90%;
-    }
-    #container {
-        min-width: 0px;
-        margin: 20px;
-        width: 90%;
-    }
+.alexander:before {
+    content: "←\2000\2000\2000\2000\2000"
 }
 
-h2 {
-    font-weight: 400;
+.alexander:after {
+    content: "󠀠\2000\2000\2000\2000\2000"
 }
 
-h3 {
-    font-weight: 300;
-    line-height: 1.5;
+.orange {
+    color: rgb(242, 76, 0);
+}
+.blue {
+    color: rgb(0, 117, 196);
+}
+.green {
+    color: rgb(0, 168, 120);
+}
+.purple {
+    color: rgb(149, 63, 193);
+}
+
+.row {
+    width: 100%;
+    margin: auto;
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+
+.center {
+    text-align: center;
+}
+
+.col {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+}
+
+.col-left {
+    width: 45%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+.col-right {
+    width: 45%;
+    text-align: left;
+    margin-right: auto;
+    margin-left: 5%;
+}
+
+.col-section {
+    margin-bottom: 40px;
+}
+
+.col-section .header {
+    text-align: center;
+}
+
+.col-section h2 {
+
+}
+
+.col-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.col-section li {
+    font-size: 20px;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+
+.col-section li > * {
+  padding: 5px;
+  margin: 0;
+}
+
+.col-section .dots {
+  flex: 1;
+  overflow: hidden;
+}
+
+.col-section .dots:after {
+    content: ' .............................................................................................................................................................. ';
+}
+
+
+.toc {
+    text-align: center;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+.toc h2 {
+    margin: 0;
+}
+
+.toc h1 {
+    margin-top: 0;
+    margin-bottom: 50px; 
+    position: relative;
+}
+
+.toc:hover h1:after{
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4,end) 2s infinite;      
+    animation: ellipsis steps(4,end) 2s infinite;
+    content: "...."; /* ascii code for the ellipsis character */
+    width: 0px;
+}
+
+.toc:hover h1:before{
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4,end) 2s infinite;      
+    animation: ellipsis steps(4,end) 2s infinite;
+    content: "\2008\2008\2008\2008";
+    width: 0px;
+}
+
+
+@keyframes ellipsis {
+  to {
+    width: 32px;    
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 40px;    
+  }
+}
+
+.stanley {
+    background-color: black;
+    font-size: 200px;
+    color: rgb(247, 247, 247);
+    height: 900;
+    width: 75;
+    font-family: "Blackberry";
+}
+
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: rgb(247, 247, 247);
+    content: '-';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
 }
 
 a {
     text-decoration: none;
-    padding-bottom: 3px
-    color:#393D3F;
-    cursor: pointer;
+    padding-bottom: 3px;
+}
+
+.noclick:hover {
+    cursor: progress;
+}
+
+.text-column a:hover {
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
+  opacity: .7;
 }
-
 a:link {
-    color:#393D3F;
-    text-decoration: none;
 }
-
 a:visited {
-    color:#393D3F;
-    text-decoration: none;
 }
-
 a:active {
-    color:#393D3F;
+}
+
+p.drop-cap:first-letter {  
+  float: left;
+  font-size: 2.5em;
+  line-height: 1em;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+
+.text-column {
+    width:80%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+.text-column p {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+p {
+   font-size: 18px; 
+}
+
+.gotu {
+    font-family: 'Gotu', sans-serif;
+}
+
+.goudy {
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /*border-bottom: 1px dotted black;*/
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+a.spectrum {
+    color:rgb(111, 202, 149);
+}
+
+a.spectrum:hover {
     text-decoration: none;
+    padding-bottom: 0px;
+    box-shadow: 0 2px rgb(111, 202, 149);
 }
 
-.hili {
-    padding-left: 3px;
-    padding-right: 3px;
-    padding: 2px;
-    border-radius:3px;
-    box-sizing: content-box;
+.align-right {
+  text-align: right;
 }
 
-.hili-yellow {
-    background-color: #FFED65;
+
+@media screen and (max-width: 600px) {
+    .desk-drawing {
+        width: 100%;
+    }
+    .tooltip .tooltiptext {
+        display: none;
+    }
+    .text-column {
+        width:90%;
+    }
+
+    .text-column p {
+        font-size: 16px;
+    }
+
+    .masonry .item {
+        border: 0px solid black;
+        box-shadow: 0px 0px rgb(0, 168, 120);
+    }
+
+    .col-section .dots:after {
+        content: '';
+    }
+
+    .col-left {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .col-right {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
 }
 
-.hili-green {
-    background-color: #BCE784;
+/* GALLERY */
+
+/* Box-sizing reset: //w3bits.com/?p=3225 */
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-.under-purple {
-    font-style: italic;
-    border-bottom: 3px solid #B4ADEA;
+/* The Masonry Container */
+.masonry {
+  margin: 1.5em auto;
+  max-width: 768px;
+  column-gap: 1.5em;
 }
 
-.under-blue {
-    font-style: italic;
-    border-bottom: 3px solid #CAE9FF;
+/* The Masonry Brick */
+.masonry .item {
+  background: white;
+  padding: 2em;
+  margin: 0 0 1.5em;
+  border: 2px solid black;
+  box-shadow: 4px 4px rgb(0, 168, 120);
 }
 
-.extra {
-    font-style: italic;
+.masonry .item p {
+    padding-bottom: 1em;
 }
 
-.boom {
-    margin-bottom: 55px;
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+    .masonry-reg {
+        column-count: 3;
+    }
+
+    .masonry-big {
+        column-count: 2;
+    }
 }
 
-#postal {
-    display: none;
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .masonry-reg {
+        column-count: 3;
+    }
+    .masonry-big {
+        column-count: 2;
+    }
 }
 
-input, select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+    .masonry-reg {
+        column-count: 2;
+    }
+    .masonry-big {
+        column-count: 2;
+    }
 }
 
-input[type=submit] {
-    width: 100%;
-    background-color: #BCE784;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.desk-drawing {
+    width: 75%;
+    height: 75%;
+    margin: auto;
 }
 
-input[type=submit]:hover {
-    background-color: rgb(148, 182, 104);
+.end {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;
 }
 
-.large-header {
-    position: relative;
-    width: 100%;
-    overflow-x: hidden;
-    background-size: cover;
-    background-position: center center;
-    z-index: 1;
+.coming-soon {
+    color: gray;
+    font-size: .6em;
 }
+
