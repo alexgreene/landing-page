@@ -1,0 +1,300 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Logger</title>
+	<meta name="description" content="Alexander Greene is a software engineer & designer living in San Francisco, California.">
+	<meta name="author" content="Alexander Greene">
+	<meta name="keywords" content="software engineer, machine learning, web design, mobile, fullstack, hand lettering, freelance">
+	<meta name="viewport" content="width=device-width" />
+
+	<link rel="stylesheet" href="../simplegrid.css">  
+	<link rel="stylesheet" href="../style.css">  
+
+	<link rel="icon" sizes="144x144" href="/icon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+	<div class="text-column gotu">
+		<img class="title-app" src="../pics/logger-icon.png"/>
+
+		<p class="goudy" style="font-size: 2em;"><strong>Logger</strong> is an iOS app for tracking anything.
+		</p>
+		
+		<p>Perfect for self-reflection or data collection, Logger is a personal journal with the flexibility of a spreadsheet. 
+		</p>
+		
+		<div class="row">
+			<div class="col-12">
+				<img class="img-full rnd" src="../pics/screenshots/logger-hero.jpg">
+			</div>
+			<!-- https://cdn.dribbble.com/users/125329/screenshots/15397273/media/8754b8c6121c99f3dae9e99f9f5d56cc.gif -->
+			
+			<!-- <div class="col-6">
+				<img class="img-full rnd" src="https://cdn.dribbble.com/users/125329/screenshots/15410217/media/02ac8d696cc540b20994aa8c58da7493.gif">
+			</div> -->
+		</div>
+		<!-- Create Logs to track specific things, like meals, apartments, or symptoms, with whatever details are important to you. -->
+		
+		<!-- <div class="card">
+			<div class="card-symbol">􀆿</div>
+			<div class="card-description">
+				Interested in joining the Logger beta test? Email logger@alexgreene.me and I'll send you an invite ASAP. You can read more about the beta <a href="http://logger.alexgreene.me">here</a>.
+			</div>
+		</div> -->
+		
+		<br>
+		As the sole designer and developer of Logger, I wear many hats:
+		<ul class="bullet-grid">
+			<li>Research, Product Strategy</li>
+			<li>Wireframing, Prototyping</li>
+			<li>Roadmapping & Prioritization</li>
+			<li>Product Design, UX</li>
+			<li>Mobile Engineering - Swift, SwiftUI</li>
+			<li>Schema Design - CoreData</li>
+			<li>Copywriting</li>
+			<li>User Outreach, Interviews</li>
+		</ul>
+		
+		
+		<h3>Why Build Logger?</h3>
+		
+		<p>Companies collect and analyze thousands of data points on our personal actions and habits every day. But if you wanted to do something similar, privately, your options are limited. Consumer apps mandate what data is important to track, and are inflexible to specific user needs. Spreadsheets are cumbersome, pen and paper is unorganized, and using several apps to track different things is a job on its own.</p>
+		
+		<p>I wanted a way to Log any sort of data quickly, on a mobile device, in a way that could be easily referenced, or exported and analyzed.</p>
+		
+		<!-- <ul>
+		<li>Tracking is best suited for a mobile device- you're rarely on your laptop when you need to enter something. Mobile spreadsheet apps are tough to type into and require patience.</li>
+		
+		<li>Pen & paper or notes apps leave you with a jumble of text and no easy way to sort through it all.</li>
+		
+		<li>As a designer and engineer, I could build a new app for each thing to track, but where does that leave the average person? It would be far more rewarding to build something that would also empower others.</li>
+		</ul> -->
+		
+		<!-- <ul>
+			<li>Wouldn't it be awesome if someone who's never used a spreadsheet could start tracking important health symptoms?</li>
+			<li>What every notes app that's used for </li>
+		</ul> -->
+		
+		<!-- <div class="card">
+			<div class="card-symbol">􀆿</div>
+			<div class="card-description">
+				I wanted to keep log the outfits I was wearing, with the intent of being more aware of the items of clothing I might donate or invest more into.
+			</div>
+		</div> -->
+		
+		<!-- <p>So I set out to build an app that would be flexible enough to track anything, while also making data entry fast, easy, and as close to fun as possible!</p> -->
+		<br>
+		<h3>Challenges</h3>
+		<p>I knew that targeting a wide audience and attempting to tackle infinite use cases would introduce many interesting problems.</p>
+		<!-- <p>I knew that by targeting a wide audience and attacking an infinite set of use cases, I would be taking on a number of product design challenges.</p> -->
+		
+		<h2>#1 Data Entry Concepts are Unfamiliar to Many People</h2>
+		<!-- <p class="small-p">Not only would it need to offer flexibility in what it could do, but it also needed to explain itself to a wide demographic and different levels of technical savvy. Can my mom understand it just as well as  the folks from r/selfquantification?</p> -->
+		<p>To be approachable, Logger would have to cater to a population with different levels of technical savvy.</p>
+		<div class="card">
+			<div class="card-symbol"></div>
+			<div class="card-description">
+				How do I build a system that my mom can understand just as well as the folks from <a href="https://www.reddit.com/r/QuantifiedSelf/">r/QuantifiedSelf</a> ?
+			</div>
+		</div>
+		
+		<h2>#2 Handling Flexibility</h2>
+		<p>The types of information that can be captured are infinite: # of bedrooms, emotions, movie ratings, tasting notes, etc. Logger would need to display unknown data types in a format that felt custom designed to for each specific use case.</p>
+		<div class="card">
+			<div class="card-symbol"></div>
+			<div class="card-description">
+				How can diverse data be displayed in a way that's useful and not overwhelming?
+			</div>
+		</div>
+	
+		
+		<h2>#3 Manual Data Entry is Tedious</h2>
+		<!-- <p class="small-p">Not only would it need to offer flexibility in what it could do, but it also needed to explain itself to a wide demographic and different levels of technical savvy. Can my mom understand it just as well as  the folks from r/selfquantification?</p> -->
+		<p>Anything that gets in the way of a customer entering their data is another reason for them to stop using the app. To help people form a tracking habit, Logger would have to be quick, simple, and enjoyable.</p>
+		<div class="card">
+			<div class="card-symbol"></div>
+			<div class="card-description">
+				How do I prevent someone from losing interest in data collection?
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<div class="gallery">
+			<img class="img-65" style="margin-right: 10px;" src="../pics/screenshots/IMG_9569.jpg">
+			<img class="img-full" src="../pics/screenshots/early-logger.gif">
+		</div>
+		<i>Left: Sketching out approaches for the Tag & Text Prompts; Right: One of the earliest versions of Logger.</i>		
+		<h3>Solutions</h3>
+		<p>The current version of Logger is a result of much testing and many iterations.</p>
+		
+		<h2>Extended Welcome</h2>
+		<!-- <p>In order to make Logger feel accessible to everyone, the onboarding experience was something I thought about on every screen, not just the introduction slides.</p> -->		
+		<p>The welcome experience was designed to be helpful and inspiring. I consider onboarding to be the entire process of familiarizing someone with what a Log is and can do, beyond the introductory slides at first launch. I renamed technical jargon, iterated on copy throughout the app, and removed points of confusion that beta testers experienced.</p>
+	
+		<div class="card">
+			<div class="card-symbol"></div>
+			<div class="card-description">
+				The concepts of Forms, Fields & Inputs, Logger refers to as Logs, Prompts & Responses. These words resonated strongly with a less technical audience who compared Logs to Journals.
+			</div>
+		</div>
+		<br>
+		<!-- <p>There are several areas within the app that highlight a variety of use cases for Logger.</p> -->
+		
+		<div class="row">
+			<div class="col-6">
+				<!-- <img class="img-full rnd" src="https://cdn.dribbble.com/users/125329/screenshots/15397273/media/8754b8c6121c99f3dae9e99f9f5d56cc.gif"> -->
+				<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr">Alright, so after spending a day on it, this is where I&#39;m at with the onboarding. It&#39;s clean and much better than before. Not App Store ready, but good for growing a beta testing group. Excited to build upon this! <a href="https://t.co/SxMtflex1w">pic.twitter.com/SxMtflex1w</a></p>&mdash; Alexander Greene (@alexg473) <a href="https://twitter.com/alexg473/status/1374215642996379653?ref_src=twsrc%5Etfw">March 23, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+		</div>
+		<br>
+		<p>Presenting a variety of templates when starting a Log illustrates relatable use cases — helping to paint a picture of what's possible without forcing people to think of something on the spot.</p>
+		
+		<div class="gallery">
+			<div class="">
+				<img class="img-full img-portfolio rnd" src="../pics/screenshots/IMG_9545.PNG">
+			</div>
+			
+			<div class="">
+				<img class="img-full img-portfolio rnd" src="../pics/screenshots/IMG_9547.PNG">
+			</div>
+		</div>
+		<br><br>
+			
+		<!-- <p>While editing or adding Prompts to a Log, I reinforce concepts with clear short descriptions where necessary, and reduce the number of elements on the screen when they are not needed.</p> -->
+		
+		<!-- <div class="row">
+			<div class="col-12">
+				<img class="img-full img-portfolio" src="https://cdn.dribbble.com/users/125329/screenshots/15410217/media/02ac8d696cc540b20994aa8c58da7493.gif">
+			</div>
+		</div> -->
+		
+		<!-- <p>The concept of designing a Log is not dissimilar from designing a form, but Logger does not present this process in any typical fashion. The interactions while building a Log are responsive and whimsical. They feel more similar to customizing the filters on an Instagram photo than creating a Google Form. Powerful, but simple.</p> -->
+		
+		<h2>Interactions Built for Efficiency</h2>
+		<p>Logger was built to be customizable. The ability to edit templates, empowers the user to make the experience unique and tailored to their own life. That means only entering what matters, reducing unnecessary interactions. The <i>Suggested Response</i> and <i>Remembered Response</i> features significantly reduce the amount of typing, helping people make entries quickly. </p>
+		
+		<div class="gallery">
+			<div class="">
+				<img class="img-full img-portfolio rnd" src="../pics/screenshots/IMG_9559.PNG">
+			</div>
+			
+			<div class="">
+				<img class="img-full img-portfolio rnd" src="../pics/screenshots/IMG_9555.PNG">
+			</div>
+		</div>
+		<br><br>
+		
+		<h2>Make Sense of Your Data, With Just a Glance</h2>
+		<!-- <p>How does Logger take unknown data types and present them in a way that makes sense?</p> -->
+		<p>Using a clean card design, diverse data is displayed thoughtfully helping users easily track while they scroll through many entries. The card layout is self-adjusting, keeping values in prominent positions so that your information is presented clearly.</p>
+		<!-- <p>With a typical spreadsheet, a single row of data is treated as lesser than the dataset as a whole. I designed Logger to treat each individual entry as important. Each is displayed as a card using an adaptable template.</p>
+		
+		The template keeps numbers and physically small values prominent in corner positions so that they are easy to track while scrolling through many entries. -->
+		
+		<div class="gallery">
+			<div class="">
+				<img class="img-full img-portfolio rnd" src="../pics/screenshots/IMG_9549.PNG">
+			</div>
+			
+			<div class="">
+				<img class="img-full img-portfolio rnd" src="../pics/screenshots/IMG_9550.PNG">
+			</div>
+			
+			<div class="">
+				<img class="img-full img-portfolio rnd" src="../pics/screenshots/IMG_9551.PNG">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-symbol"></div>
+			<div class="card-description">
+				Entries can be easily shared, and in an upcoming version, Logs can be exported in CSV format.
+			</div>
+		</div>
+		<br>
+		<br><br>	
+		
+		<h2>Logger is Flexible Enough to Track Anything</h2>
+		<p>A fantastic group of beta testers is proving that. They range from founders and CEOs to professors, students, and therapists. They have shared amazing use cases that have inspired me and support Logger's potential.
+		</p>
+		
+		<div class="card">
+			<div class="card-symbol">􀆿</div>
+			<div class="card-description">
+				Interested in joining the Logger beta test? Email logger@alexgreene.me and I'll send you an invite ASAP. You can read more about the beta <a href="http://logger.alexgreene.me">here</a>.
+			</div>
+		</div>
+		<br><br>
+		<!-- <p>Logger is designed, developed, and managed by myself, but I've had invaluable brainstorming & design input, and help managing a stream of user feedback. Throughout this process, I've gained a lot of experience with SwiftUI and CoreData. I've encountered rewarding design challenges, such as user onboarding and simplifying technical concepts. I've grown skills like prioritizing features and communicating with and interviewing beta testers.</p> -->
+	
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<!-- <div class="card">
+			<div class="card-symbol">􀆿</div>
+			<div class="card-description">
+				Furthermore, in designing and building Logger, I've realized moreso the potential for customizable software tools that are accessible to the average person. At a high level, I'm observing the polarization of software. Apps are being simplified for very specific use cases, and powerful tools are being made for the technically savvy. The middle ground is growing smaller, and in some ways I see Logger as a response to that.
+			</div>
+		</div> -->
+
+		
+		
+
+	
+	</div>
+</body>
+
+</html>
+
+
+<!-- 3
+<p>Any software that offers unlimited flexibility to user input is going to struggle with edge cases and edits / data migrations. Logger would need to place reasonable limits on flexibility without making the customer feel held back.
+</p>
+<p></p>
+
+	
+<div class="row">
+	<div class="col-6">
+		<div class="card">
+			<img class="card-app" src="pics/logger-icon.png"/>
+			<div class="card-description">
+				Those familiar with self-quantification will understand the use cases immediately and won't want to be spoken down to
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-6">
+		<div class="card">
+			<img class="card-app" src="pics/intermission-icon.png"/>
+			<div class="card-description">
+				those less familiar with spreadsheets and form building could not be confused with foreign concepts/vocabulary.
+			</div>
+		</div>
+	</div>
+</div>
+
+<p></p>
+
+<div class="card">
+	<div class="card-symbol">􀆿</div>
+	<div class="card-description">
+		I also had to consider the implications of schema design on future features. When data analysis features are made available, certain prompts will yield more interesting results, but the user should not have to worry about this when designing their Log.
+	</div>
+</div> -->

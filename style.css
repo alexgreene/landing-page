@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Gotu|Open+Sans:400,400i,700,700i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 html {
      box-sizing: border-box;
 }
@@ -13,17 +11,26 @@ body {
 
 .img-full {
     width: 100%;
-    margin: auto;
+}
+.img-65 {
+  width: 65%;
+  height: 65%;
 }
 .img-75 {
     width: 75%;
     height: 75%;
-    margin: auto;
 }
 .img-50 {
     width: 50%;
     height: 50%;
-    margin: auto;
+}
+
+.img-portfolio {
+  max-height: 500px;
+  height: 100%;
+  width: auto;
+  margin-right: 35px;
+  box-shadow: 0px 0px 10px color(srgb 0 0 0 / 0.1);
 }
 
 .alexander {
@@ -37,9 +44,9 @@ body {
     content: "←\2000\2000\2000\2000\2000"
 }
 
-.alexander:after {
+/*.alexander:after {
     content: "󠀠\2000\2000\2000\2000\2000"
-}
+}*/
 
 .orange {
     color: rgb(242, 76, 0);
@@ -54,7 +61,7 @@ body {
     color: rgb(149, 63, 193);
 }
 
-.row {
+.my-row {
     width: 100%;
     margin: auto;
     display: -ms-flexbox; /* IE10 */
@@ -125,6 +132,45 @@ body {
 
 .col-section .dots:after {
     content: ' .............................................................................................................................................................. ';
+}
+
+.card {
+  display: flex;
+  //border: 1px solid color(srgb 0 0.757 0.883);
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  background: color(srgb 0.827 0.894 0.894 / 0.148);
+  box-shadow: black;
+}
+
+.card-app {
+  width: 20%;
+  height: 20%;
+  transform: rotate(-5deg) translateX(-10px);
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+.title-app {
+  width: 15%;
+  height: 15%;
+  transform: rotate(-5deg) translateX(-10px);
+  margin-top: 20px;
+  margin-bottom:15px;
+  border-radius: 20px;
+}
+
+.card-symbol {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 2em;
+}
+
+.card-description {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 
@@ -206,6 +252,10 @@ a {
     padding-bottom: 3px;
 }
 
+.card-description {
+  color: black;
+}
+
 .noclick:hover {
     cursor: progress;
 }
@@ -239,21 +289,47 @@ p.drop-cap:first-letter {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    text-align: justify;
+    /*text-align: justify;*/
 }
 
 .text-column p {
-    font-size: 15px;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    font-size: 1.5em;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    line-height: 150%;
+}
+
+.text-column p .goudy {
+    line-height: 100%;
 }
 
 p {
-   font-size: 18px; 
+   font-size: 1.8em; 
+   margin: 0px;
+}
+
+p.small-p {
+  font-size: 1.3em;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  line-height: 150%;
+}
+
+.text-column h3 {
+  margin: 0px;
+  margin-top: 30px;
+  font-size: 2.25em;
+  font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.text-column h2 {
+  margin-top: 50px;
+  font-size: 1.8em;
+  font-family: 'Goudy Bookletter 1911', serif;
 }
 
 .gotu {
-    font-family: 'Gotu', sans-serif;
+    font-family: 'Lora', serif;
 }
 
 .goudy {
@@ -326,7 +402,7 @@ a.spectrum:hover {
     }
 
     .text-column p {
-        font-size: 16px;
+        font-size: 1.2em;
     }
 
     .masonry .item {
@@ -372,7 +448,7 @@ a.spectrum:hover {
   padding: 2em;
   margin: 0 0 1.5em;
   border: 2px solid black;
-  box-shadow: 4px 4px rgb(0, 168, 120);
+  box-shadow: 4px 4px rgb(188, 210, 203);
 }
 
 .masonry .item p {
@@ -426,5 +502,33 @@ a.spectrum:hover {
 .coming-soon {
     color: gray;
     font-size: .6em;
+}
+
+
+/*  */
+
+.bullet-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bullet-grid li {
+  list-style: square;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  width: 20%;
+  font-size: 0.9em;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: left;
+  overflow-x: auto;
+  padding-bottom: 15px;
+}
+
+.rnd {
+  border-radius: 20px;
 }
 
