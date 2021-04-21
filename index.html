@@ -10,6 +10,7 @@
 	<meta name="keywords" content="software engineer, machine learning, web design, mobile, fullstack, hand lettering, freelance">
 	<meta name="viewport" content="width=device-width" />
 
+	<link rel="stylesheet" href="simplegrid.css">  
 	<link rel="stylesheet" href="style.css">  
 
 	<link rel="icon" sizes="144x144" href="/icon.png">
@@ -29,46 +30,98 @@
 			<img class="desk-drawing" alt="My Home Office" src="pics/desk.png">
 		</div>
 
-		<p class="goudy drop-cap" style="font-size: 30px;"><strong>Welcome, friend!</strong> My name is Alexander Greene. I'm a software engineer & designer, living in San Francisco, California.
+		<p class="goudy" style="font-size: 2em;"><strong>Hey&nbsp;there!</strong><br>I'm&nbsp;Alexander, a&nbsp;designer&nbsp;&&nbsp;engineer living in San&nbsp;Francisco,&nbsp;California.
+		</p>
+		
+		<p>I design whimsical experiences and build software with impact. My work is multidisciplinary and people-focused.
 		</p>
 
-		<p>I'm also a proficient doodler, green thumb, and self-tracking enthusiast. Having grown up in New York, I'm a die hard Yankees fan and have very specific opinions on pizza & bagels. I enjoy playing pinball, looking at maps, and building beautiful, impactful software.  
+		<p>I'm a proficient doodler, green thumb, and self-tracking enthusiast. As a native New Yorker, I have specific opinions on pizza & bagels. I enjoy playing pinball, looking at maps, and trying new hot sauces. I constantly think about how things can be better designed.
 		</p>
 
 		<img class="img-full" alt="One of my many plants" src="pics/plants.png">
 
-		<p>Most recently, I was a founding engineer at <a class="spectrum" href="http://www.getspectrum.io">Spectrum Labs</a>. What began in a Palo Alto garage has evolved into a team of over a dozen, <em>and growing</em>. During my time there, I designed and bootstrapped machine learning systems that protect online communities from trolls and disingenuous behavior. They are currently deployed by several of the world's largest online properties.</p>
-
-		<p>Independently, I'm quite proud of a variety of side projects and hobbies. I invite you to explore some of them:</p>
+		<p>I'm the designer and developer of Logger - an iOS app for tracking anything. It's a simple data collection tool built for the average person.</p>
+		
+		<p>I write a <a class="" href="https://www.getrevue.co/profile/AppleTurnover">newsletter</a> about finding and investing in improve-able software. I recently acquired a Mac app, improved it, and rebranded it as Intermission.</p>
+		
+		<div class="row">
+			<div class="col-6">
+				<a href="process/logger.html">
+				<div class="card">
+					<img class="card-app" src="pics/logger-icon.png"/>
+					<div class="card-description">
+						Learn more about why I built <b>Logger</b>, how I designed it, and how to join the Private Beta.
+					</div>
+				</div>
+				</a>
+			</div>
+			
+			<div class="col-6">
+				<a href="process/intermission.html">
+				<div class="card">
+					<img class="card-app" src="pics/intermission-icon.png"/>
+					<div class="card-description">
+						<b>Intermission</b> reminds you to give your eyes a break. Learn why I acquired it and how I'm making it better.
+					</div>
+				</div>
+				</a>
+			</div>
+		</div>
+		
+		<br>
+		<p>Previously, I was a founding engineer at <a class="spectrum" href="http://www.getspectrum.io">Spectrum Labs</a>. What began in a Palo Alto garage has evolved into a team of over a dozen, <a href="https://techcrunch.com/2020/09/24/spectrum-labs-raises-10m-for-its-ai-based-platform-to-combat-online-toxicity/">and growing</a>. During my time there, I designed and bootstrapped machine learning systems that protect online communities from trolls and toxic behavior. They are currently deployed by several of the world's largest online properties.</p>
+		
+		<div class="card">
+			<div class="card-symbol">􀆿</div>
+			<div class="card-description">
+				Communities are the past, present, and future of the web. Some of my favorites are Pinside, RatRodBikes, Hacker News, and (certain subsets of) Twitter.
+			</div>
+		</div>
+		<br>
+		<p>I'm quite proud of a variety of projects and hobbies. I invite you to explore some of them:</p>
 	
-		<div class="row goudy">
+		<div class="my-row goudy">
 			<div class="col">
 				<div class="col-section">
-					<h2 class="header">Software</h2>
+					<h2 class="header">Side Projects</h2>
 					<hr>
 					<ul>
 						<li class="item">
-							<span>Really really fast data entry.</span>
+							<span>Find legitimate online business for sale, faster.</span>
 							<span class="dots"></span>
 							<span class="align-right">
-								<a class="orange noclick">Logger&nbsp;for&nbsp;iOS</a>
-								<span class="coming-soon">(Coming&nbsp;soon!)</span>
+								<a class="orange" href="http://blog.alexgreene.me/index.php/appscout-aggregates-online-business-listings/">AppScout</a>
+							</span>
+						</li>
+						<li class="item">
+							<span>Quickly rank anything, one comparison at a time.</span>
+							<span class="dots"></span>
+							<span class="align-right">
+								<a class="orange" href="http://blog.alexgreene.me/index.php/quickly-rank-anything-one-comparison-at-a-time/">Pairwise</a>
+							</span>
+						</li>
+						<li class="item">
+							<span>Communicate Secretly with Ciphers.</span>
+							<span class="dots"></span>
+							<span class="align-right">
+								<a class="orange" href="http://blog.alexgreene.me/index.php/secret-codes-communicate-secretly-with-ciphers/">Secret&nbsp;Codes</a>
 							</span>
 						</li>
 						<li class="item">
 							<span>Generate a playable quiz from a Wikipedia page.</span>
 							<span class="dots"></span>
-							<span><a class="orange" href="https://news.ycombinator.com/item?id=13677748">WikiQuiz</a></span>
+							<span><a class="orange" href="https://github.com/alexgreene/WikiQuiz">WikiQuiz</a></span>
 						</li>
 						<li class="item">
-							<span>Discover the most exciting moments in Baseball</span>
+							<span>Discover the most exciting moments in Baseball.</span>
 							<span class="dots"></span>
 							<span><a class="orange" href="http://blog.alexgreene.me/index.php/2016/11/10/a-baseball-hackathon-in-chicago-yes-please/">Scout</a></span>
 						</li>
 						<li class="item">
 							<span>A map of baseball stadiums and team affiliations.</span>
 							<span class="dots"></span>
-							<span><a class="orange" href="http://thebaseballmap.alexgreene.me/">The&nbsp;Baseball&nbsp;Map</a></span>
+							<span><a class="orange" href="http://alexgreene.me/thebaseballmap">The&nbsp;Baseball&nbsp;Map</a></span>
 						</li>
 						<li class="item">
 							<span>Play hangman, but with gifs!</span>
@@ -78,18 +131,13 @@
 					</ul>
 				</div>
 				<div class="col-section">
-					<h2 class="header">Design Concepts</h2>
+					<h2 class="header">Concepts</h2>
 					<hr>
 					<ul>
 						<li class="item">
-							<span>Find trivia events in your area.</span>
+							<span>A Community for Coffee Lovers.</span>
 							<span class="dots"></span>
-							<span><a class="blue" href="http://blog.alexgreene.me/index.php/2020/05/04/concept-find-trivia-events-in-your-area/">Trivia&nbsp;Knight</a></span>
-						</li>
-						<li class="item">
-							<span>Students helping students</span>
-							<span class="dots"></span>
-							<span><a class="blue" href="http://blog.alexgreene.me/index.php/halp-hackathon-app/">Halp!</a></span>
+							<span><a class="blue" href="http://blog.alexgreene.me/index.php/roasted-a-community-for-coffee-lovers/">Roasted</a></span>
 						</li>
 						<li class="item">
 							<span>Interactive storytelling, in your browser.</span>
@@ -97,16 +145,44 @@
 							<span><a class="blue" href="http://blog.alexgreene.me/index.php/concept-interactive-storytelling-in-your-browser/">Campfire</a></span>
 						</li>
 						<li class="item">
-							<span>Crowdsourced data annotation.</span>
+							<span>Find trivia events in your area.</span>
 							<span class="dots"></span>
-							<span><a class="blue" href="http://blog.alexgreene.me/index.php/crowdsourced-data-annotation/">Classifire</a></span>
+							<span><a class="blue" href="http://blog.alexgreene.me/index.php/2020/05/04/concept-find-trivia-events-in-your-area/">Trivia&nbsp;Knight</a></span>
 						</li>
+						<li class="item">
+							<span>Students helping students.</span>
+							<span class="dots"></span>
+							<span><a class="blue" href="http://blog.alexgreene.me/index.php/halp-hackathon-app/">Halp!</a></span>
+						</li>
+						
 					</ul>
 				</div>
+				
+				<!-- <div class="col-section">
+					<h2 class="header">Writing</h2>
+					<hr>
+					<ul>
+						<li class="item">
+							<span>I publish a newsletter about iOS/Mac app acquisitions.</span>
+							<span class="dots"></span>
+							<span><a class="purple" href="https://www.getrevue.co/profile/AppleTurnover">Apple Turnover</a></span>
+						</li>
+						<li class="item">
+							<span>I tweet what's on my mind.</span>
+							<span class="dots"></span>
+							<span><a class="purple" href="https://twitter.com/alexg473">Follow Me</a></span>
+						</li>
+						<li class="item">
+							<span>I blog, on occassion.</span>
+							<span class="dots"></span>
+							<span><a class="purple" href="http://blog.alexgreene.me">Read Blog</a></span>
+						</li>
+					</ul>
+				</div> -->
 			</div>
 		</div>
 	
-		<div class="row goudy"> 
+		<div class="my-row goudy"> 
 			<div class="col-left">
 				<img class="img-full" alt="A pennant" src="pics/pennant.png">
 				
@@ -114,46 +190,48 @@
 					<h2 class="header">Arts & Crafts</h2>
 					<hr>
 					<ul>
-						<li class="item"><a class="purple" href="lettering.html">Hand Lettering</a></li>
-						<li class="item"><a class="purple" href="pennants.html">Pennants</a></li>
-						<li class="item"><a class="purple" href="illustrations.html">Illustrations</a></li>
+						<li class="item"><a class="green" href="lettering.html">Hand Lettering</a></li>
+						<li class="item"><a class="green" href="pennants.html">Pennants</a></li>
+						<li class="item"><a class="green" href="illustrations.html">Sketches & Illustrations</a></li>
+						<!-- <li class="item"><a class="green" href="pennants.html">Homes of the Sunset</a></li> -->
 					</ul>
 				</div>
 			</div>
 
 			<div class="col-right">
-				<img class="img-full" alt="Fermented goods" src="pics/hot-sauce.png">
+				<!-- <img class="img-full" alt="Fermented goods" src="pics/hot-sauce.png">
 				<div class="col-section">
-					<h2 class="header">Recipes</h2>
+					<h2 class="header">Communities</h2>
 					<hr>
 					<ul>
 						<li class="item"><a class="green noclick">Coming soon...</a></li>
 					</ul>
-				</div>
+				</div> -->
+				<img class="img-full" alt="My coffee cup." src="pics/coffee.png">
 			</div>
 
 		</div>
+
+		 
+		<p>If you'd like to learn more about me, you can <a href="http://blog.alexgreene.me">read my blog</a> or <a href="https://twitter.com/alexg473">follow me on Twitter</a>.</p>
 	
 
-		<div class="row goudy" style="margin-top: 60px; margin-bottom: 60px;"> 
+		<!-- <div class="my-row goudy" style="margin-top: 60px; margin-bottom: 60px;"> 
 			<p style="text-align: justify; margin: auto; font-size: 20px;">I am currently <strong>available</strong> for work & open to opportunities. Let's grab a (virtual) coffee and chat!</p>
-
-			<img class="img-50" width="1037" height="787" alt="My coffee cup." src="pics/coffee.png">
-		</div>
+		</div> -->
 
 	
-		<a class="toc blue" href="https://www.linkedin.com/in/alexlgreene/">
+		<!-- <a class="toc blue" href="https://www.linkedin.com/in/alexlgreene/">
 			<h2>Need more proof?</h2>
 			<h1>View my LinkedIn.</h1>
-		</a>
+		</a> -->
 
-		<a class="toc purple" href="http://blog.alexgreene.me/">
+		<!-- <a class="toc purple" href="http://blog.alexgreene.me/">
 			<h2>I write, on occassion.</h2>
 			<h1>Read Blog.</h1>
-		</a>
+		</a> -->
 
-		<a class="toc green" href="mailto:$$$" 
-			onclick="this.href=this.href.replace('$$$','alexgrn7@gmail.com')">
+		<a class="toc green" href="mailto:alex@alexgreene.me">
 			<h2>Want to get in touch?</h2>
 			<h1>Contact me.</h1>
 		</a>
