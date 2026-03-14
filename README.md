@@ -1,7 +1,7 @@
 # landing-page
 
 (2020 - jan 2025)
-![alt tag](https://github.com/alexgreene/landing-page/blob/master/docs/2020-version.png)
+![alt tag](https://github.com/alexgreene/landing-page/blob/master/docs/2020-version.jpg)
 
 
 The prior version (2017-2020):
