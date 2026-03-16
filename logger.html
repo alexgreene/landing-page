@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Logger was an app for tracking anything</title>
+  <meta name="description" content="Logger was an app for tracking anything">
+  <meta name="keywords" content="alex, greene, designer, product designer, portfolio, logger, tracking, app">
+  <meta name="author" content="Alexander Greene">
+  <meta property="og:title" content="Logger was an app for tracking anything" />
+  <meta property="og:image" content="./images/icons.png"/>
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+
+
+</head>
+<body>
+  <div class="container" style="position: fixed; top: 3%; left: 50%; transform: translate(-50%, 0);">
+    <div class="row" style="width: 100%; max-width: 700px; margin: 0 auto;"  >
+      <h4 class="back mills"><a href="index.html"> Alexander Greene</a></h4>
+      <video class="animate-in" style="background-color: whitesmoke; width: 100%; padding-top: 12px; padding-bottom: 24px; height: 400px;" muted loop autoplay playsinline>
+        <source src="videos/logger.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div> 
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container mills" style="box-shadow: 0px 0px 50px 50px white;">
+    
+    <div class="bottom-gradient"></div>
+    <div style="background-color: white; margin-top: 550px;">
+      <br>
+      <h3>
+        <span class="hover-tilt-icon" style="display:inline-block;">
+          Logger
+          <img class="biggest-icon" src="./images/logger.png"></img> 
+        </span>
+        is an app for tracking anything.
+      </h3>
+
+      <div class="row end">
+        <p>The app store is full of apps for tracking different things from workouts to medications, but if you have a unique thing to track, what do you use? I found myself in this scenario several years ago. After attempting to use Google sheets on my iPhone, I set to work designing a tracking app that would be completely customizable <i>and</i> user friendly.</p>
+        <p>Working independently, I created Logger. I wore all of the hats: design, engineering, communicating with users, prioritizing bugs, copywriting, and marketing—all while learning SwiftUI and CoreData. I sought out an early set of users, growing a sizeable pool of beta testers from whom I collected valuable feedback.</p>
+
+        <blockquote class="subtle" >
+          As I built Logger, I shared progress on Twitter to attract potential users. Here's an example <a href="https://x.com/alexg473/status/1374093203222142976">thread</a>.
+        </blockquote>
+      </div>
+
+     <div class="row end">  
+        <div class="section-lead">
+          <h4>Why Build Logger?</h4>
+        </div>
+        <p>Companies collect and analyze thousands of data points on our personal actions and habits every day. But if you wanted to do something similar, privately, your options are limited. Consumer apps mandate what data is important to track, and are inflexible to specific user needs. Spreadsheets are cumbersome, pen and paper is unorganized, and using several apps to track different things is a job on its own.</p><p>I wanted a way to log any sort of data quickly, on a mobile device, in a way that could be easily referenced, exported, and analyzed.</p> 
+    </div>  
+
+    <div class="row ">  
+      <div class="section-lead">
+        <h4>Challenges</h4>
+      </div>
+    </div>
+
+      <div class="row buffer">  
+        <h4 class="tight smaller">Data entry concepts are unfamiliar to most people</h4>
+        <p>To be approachable, Logger would have to cater to a population with different levels of technical savvy. <i>How do I build a system that my mom could understand just as well as the self-tracking enthusiasts from <a href="https://www.reddit.com/r/QuantifiedSelf/">r/QuantifiedSelf</a>?</i></p> 
+      </div>
+
+      <div class="row buffer">  
+        <h4 class="tight smaller">Handling flexibility</h4>
+        <p>The types of information that can be captured are infinite: # of bedrooms, emotions, movie ratings, tasting notes, etc. Logger would need to display unknown data types in a format that felt custom designed to for each specific use case. <i>How can diverse data be displayed in a way that's useful and not overwhelming?</i></p> 
+      </div>
+
+      <div class="row buffer">  
+        <h4 class="tight smaller">Manual data entry is tedious</h4>
+        <p>Anything that gets in the way of a customer entering their data is another reason for them to stop using the app. To help people form a tracking habit, Logger would have to be quick, simple, and enjoyable. <i>How do I prevent someone from losing interest, or breaking a habit?</i></p> 
+      </div>
+
+      <div class="row end slides">
+        <div class="slide" style="margin-right: 5%;">
+          <img class="" style="max-height: 300px;" alt="sketches made while designing Logger" src="images/logger-sketch.jpg">
+          <figcaption class="dim">Sketching out approaches for the Tag & Text Prompts.</figcaption>
+        </div>
+
+        <div class="slide last" style="margin-right: 5%;">
+          <img class="" style="height: 100%; max-height: 300px;" alt="early prototype of Logger" src="videos/early-logger.gif">
+          <figcaption>Early prototype.</figcaption>
+        </div>
+      </div>
+
+      <div class="row ">  
+        <div class="section-lead">
+          <h4>Solutions</h4>
+        </div>
+      </div>
+      
+      <div class="row">  
+          <h4 class="tight smaller">The extended welcome</h4>
+          <p>The welcome experience was designed to be helpful and inspiring. I consider onboarding to be the entire process of familiarizing someone with what a Log is and can do, beyond the introductory slides at first launch. I renamed technical jargon, iterated on copy throughout the app, and removed points of confusion that beta testers experienced.</p> 
+
+          <blockquote class="subtle" >
+            Instead of terms like <i>forms</i>, <i>fields</i> & <i>inputs</i>, I used language that did not lean technical: <i>logs, prompts & responses</i> (respectively). These words resonated strongly with a less technical audience (who compared logs to journals) and did not carry the connotation of data entry.
+          </blockquote>
+
+          <p>Presenting a variety of templates when starting a Log illustrates relatable use cases- helping to paint a picture of what’s possible without forcing people to think of something on the spot.</p>
+      </div>
+
+      <div class="row end slides">
+        <div class="slide" style="margin-right: 5%;">
+          <img class="" style="height: 100%; max-height: 400px;" alt="screenshot showing the template selection screen" src="images/A2.jpg">
+        </div>
+
+        <div class="slide last" style="margin-right: 5%;">
+          <img class="" style="height: 100%; max-height: 400px;" alt="screenshot showing the template editing screen" src="images/B2.jpg">
+        </div>
+      </div>
+
+
+      <div class="row">  
+          <h4 class="tight smaller">Interactions built for efficiency</h4>
+          <p>Logger was built to be customizable. The ability to edit templates empowers the user to make the experience unique and tailored to their own life. That means only entering what matters, reducing unnecessary interactions. The Suggested Response and Remembered Response features significantly reduce the amount of typing, helping people make entries quickly.</p> 
+      </div>
+
+      <div class="row end slides">
+        <div class="slide" style="margin-right: 5%;">
+          <img class="" style="height: 100%; max-height: 400px;" alt="screenshot showing an example log entry being created" src="images/D.jpg">
+        </div>
+
+        <div class="slide last" style="margin-right: 5%;">
+          <img class="" style="height: 100%; max-height: 400px;" alt="screenshot showing quick actions I added when long pressing on the Logger app icon" src="images/E.jpg">
+        </div>
+      </div>
+
+      <div class="row">  
+          <h4 class="tight smaller">Make sense of your data, with just a glance</h4>
+          <p>Using a card component, diverse data is displayed thoughtfully, helping users easily track while they scroll through many entries. The card layout dynamically adjusts based on the data available, keeping values in prominent positions so that your information is presented clearly.
+</p> 
+      </div>
+
+      <div class="row end slides">
+        <div class="slide" style="margin-right: 5%;">
+          <img class="" style="height: 100%; max-height: 400px;" alt="screenshot showing a list of log entries" src="images/F.jpg">
+        </div>
+
+        <div class="slide" style="margin-right: 5%;">
+          <img class="" style="height: 100%; max-height: 400px;" alt="screenshot showing a list of log entries" src="images/G.jpg">
+        </div>
+
+        <div class="slide" style="margin-right: 5%;">
+          <img class="" style="height: 100%; max-height: 400px;" alt="screenshot showing a log entry being shared" src="images/H.jpg">
+        </div>
+      </div>
+
+      <div class="row ">  
+        <div class="section-lead">
+          <h4>Looking Back</h4>
+        </div>
+        <p>Looking back on Logger several years later, there were some certain successes:</p>
+        <ol>
+          <li>Logger was very well recieved by users who had a use case in mind—I recieved several personal stories and many messages of appreciation.</li>
+          <li>I was very efficient with smoothing out points of friction. I prioritized improvements with high impact, based on many conversations with beta testers.</li>
+        </ol>
+
+        <br>
+        <p>Should I revive Logger in the future, there are several things I'd do differently.</p>
+
+        <ol>
+          <li>Focus on use-cases that deliver immediate value and help address existing problems in user’s lives, rather than solve novel use cases.</li>
+          <li>Some users still did not understand the concept, so I would consider repositioning the app. Perhaps reframing Logger as a better mobile experience for spreadsheets. Or turning it into a a more powerful version of a journalling app, which most people understand.</li>
+          <li>Even if users understood the concept of Logger, if they did not have a use case when the downloaded it, they did not develop one and quickly abandoning the app.</li>
+          <li>Build CSV import and export. CSV users who may have to take notes / capture data in the field, might find it valuable to connect to Logger.</li>
+          <li>Perform a visual overhaul. Having spent 3 years as a product designer since this project, there are a lot of improvements I would make to clean up the interface. There's too much text, niche settings are too visible, and there's a lot of spacing/type usage to be adjusted.</li>
+        </ol>
+      </div>
+  </div>
+
+  <footer>  
+    <figcaption>
+      &copy; 
+      <span id="copyright">
+        <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+      </span> 
+      Alexander Greene. Thanks for reading this far! Fun fact: I still get requests from folks wanting to beta test Logger!.
+    </figcaption>
+  </footer>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
