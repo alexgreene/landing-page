@@ -1,17 +1,10 @@
+body {
+  border: 16px solid #EFE9E7;
+}
+
 h4 {
   font-size: 32px;
-}
-
-h5.tight {
-  margin-bottom: 1%;
-}
-
-h4.loose {
-  margin-bottom: 2%;
-}
-
-h4.smaller {
-  font-size: 28px;
+  margin-bottom: 12px;
 }
 
 p {
@@ -68,27 +61,26 @@ li {
 }
 
 .section-lead {
+  border-top: 2px double #b5b5b5;
+  overflow: visible;
+  text-align: left;
+  padding-top: 16px;
+  margin-bottom: 16px;
+  z-index: 10;
+}
+
+.section-lead h4 {
 
   font-weight: 300;
   font-style: normal;
+  margin-bottom: 24px;
 
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: #b5b5b5; 
-  margin-bottom: 8%;
 }
 
-
-hr {
-    border: none;
-    border-top: 2px double #b5b5b5;
-    color: #b5b5b5;
-    overflow: visible;
-    text-align: center;
-    height: 5px;
-    margin-bottom: 16px;
-}
 
 blockquote {
   margin-top: 0;
@@ -119,7 +111,7 @@ blockquote {
 } 
 
 a {
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
   color: #1E7A6F;
 }
@@ -162,7 +154,11 @@ text {
 }
 
 .row.end {
-  margin-bottom: 15%;
+  margin-bottom: 84px;
+}
+
+.row.end2 {
+  margin-bottom: 128px;
 }
 
 .row.buffer {
@@ -171,8 +167,6 @@ text {
 
 
 .slides {
-  overflow: auto;
-  white-space: nowrap;
   /*-webkit-mask: linear-gradient(to right, #000 5%, #0000);
           mask: linear-gradient(to right, #000 5%, #0000);*/
 
@@ -201,10 +195,6 @@ text {
 .dim {
   opacity: 60%;
 /*  color: #1E7A6F;*/
-}
-
-.intro {
-  font-size: 17px;
 }
 
 .fog {
@@ -266,8 +256,6 @@ text {
 
    font-family: "Inknut Antiqua", serif;
 
-  text-transform: uppercase;
-
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;   
@@ -275,7 +263,7 @@ text {
   cursor: pointer;
 
   transition: all 0.1s ease-out;
-  margin-top: 3%;
+  margin-top: 12px;
   border-radius: 4px;
 }
 
@@ -484,37 +472,165 @@ text {
   color: #F24C00;;
 }
 
-.qr {
-  transform: rotate(5deg);
-  width: 100px;
-}
-
 /* Larger than mobile */
 @media (min-width: 451px) {
-  .qr {
-    display: inherit;
-  }
   .mobile-only {
     display: none;
-  }
-  .app-clip:after {
-    content: 'Scan the QR code with an iPhone:';
   }
 }
 
 /* mobile */
 @media (max-width: 450px) {
-  .qr {
-    display: none;
-  }
   .mobile-only {
     display: inherit;
   }
-  .app-clip:after {
-    content: 'Click below to launch!';
+}
+
+.arcade-demo {
+  padding: 12px;
+  background: whitesmoke;
+  border-radius: 12px;
+}
+
+ 
+.prompt-bar {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  margin-bottom: 12px;
+}
+ 
+.prompt-text {
+  flex: 1;
+  font-size: 15px;
+  color: #222;
+}
+ 
+.prompt-palette {
+  display: flex;
+  flex-shrink: 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+ 
+.swatch-half {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+ 
+.prompt-spinner {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.spinner-svg {
+  animation: spin 0.9s linear infinite;
+}
+ 
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+ 
+.rug-results {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+ 
+.rug-circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #e8e8e8;
+  flex-shrink: 0;
+  background: #f2f2f2;
+}
+ 
+.rug-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.photo-grid {
+  columns: 2;
+  column-gap: 16px;
+  margin: 1.5rem 0;
+}
+ 
+.photo-item {
+  break-inside: avoid;
+  margin: 0 0 16px 0;
+}
+ 
+.photo-item img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+ 
+.photo-item figcaption {
+  font-size: 12px;
+  color: #999;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+ 
+@media (max-width: 600px) {
+  .photo-grid { columns: 2; }
+}
+ 
+.other-project h5 {
+  margin-bottom: 12px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+@media (max-width: 800px) {
+  .sticky {
+    position: relative;
   }
 }
 
-.app-clip span {
-  display: none;
+.chat-button {
+  font-family: "Inknut Antiqua", serif;
+  border: 1px solid #1E7A6F;
+  padding: 8px;
+  width: 90%;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+
 }
+
+.chat-button a {
+  color: #1E7A6F;
+}
+
+.chat-button:hover {
+  background: #1E7A6F;
+}
+
+.chat-button:hover a {
+  color: white;
+}
+
+
+
